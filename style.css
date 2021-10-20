@@ -1,0 +1,124 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+}
+
+#container {
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 120px;
+}
+
+.card {
+    align-items: center;
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 450px;
+}
+
+.card__desc {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.card__desc h2 {
+    color: hsl(223, 47%, 23%);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.card__desc p {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card__plan {
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    padding-bottom: 20px; 
+    padding-top: 20px;
+    width: 75%;
+}
+
+.iconBox {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.card__plan__change {
+    padding-right: 15px;
+    text-align: right;
+    width: 40%;
+}
+
+.card__plan__detail h4 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.card__plan a:hover {
+    color: hsl(245, 75%, 52%);
+    text-decoration: none; 
+}
+
+.card__plan__detail h4, p {
+    margin: 3px;
+}
+
+.card__plan__detail p {
+   color:hsl(224, 23%, 55%);
+   
+}
+
+.paymentBtn a {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 15px;
+    box-shadow: 100%, hsl(245, 100%, 100%);
+    color: white;
+    font-weight: 900;
+    padding: 20px 90px 20px 90px;
+    text-decoration: none;
+}
+
+.paymentBtn a:hover {
+    background-color: hsla(249, 59%, 50%, 0.658)
+}
+
+.cancelOrderBtn {
+    padding-bottom: 50px;  
+    padding-top: 40px;  
+}
+
+.cancelOrderBtn a {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.cancelOrderBtn a:hover {
+    color: hsl(223, 47%, 23%);
+}
