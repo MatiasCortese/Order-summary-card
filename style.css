@@ -23,7 +23,8 @@ body {
 .card {
     align-items: center;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 20px;
+    box-shadow: 0 5px 60px 0 rgba(0, 0, 0, .3);
     display: flex;
     flex-direction: column;
     height: 700px;
@@ -96,7 +97,7 @@ body {
 
 .paymentBtn a {
     background-color: hsl(245, 75%, 52%);
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 100%, hsl(245, 100%, 100%);
     color: white;
     font-weight: 900;
@@ -105,7 +106,7 @@ body {
 }
 
 .paymentBtn a:hover {
-    background-color: hsla(249, 59%, 50%, 0.658)
+    background-color: hsl(244, 82%, 68%);
 }
 
 .cancelOrderBtn {
@@ -120,5 +121,63 @@ body {
 }
 
 .cancelOrderBtn a:hover {
-    color: hsl(223, 47%, 23%);
+    color: hsl(222, 14%, 41%)
+}
+
+@media all and (max-width: 375px) {
+    #container {
+        background-image: url(/images/pattern-background-mobile.svg);
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        height: 575px;
+        margin: 50px;
+        width: 322px;
+    }
+    
+    .card__img img {
+        max-width: 100%;
+ 
+    }
+    .card__desc h2 {
+        margin-top: 28px;
+        font-size: 22px;
+    }
+
+    .card__desc p {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    .card__plan {
+        font-size: 14px;
+        margin-bottom: 40px;
+        margin-top: 15px;
+        padding-bottom: 15px; 
+        padding-top: 15px;
+        width: 85%;
+    }
+
+    .iconBox {
+        width: 35%;
+    }
+    
+    .card__plan__detail {
+        width: 40%;
+    }
+
+    .paymentBtn a {
+        font-size: 15px;
+        font-weight: 900;
+        padding: 15px 55px 15px 55px;
+        box-shadow: 0 5px 60px 0 rgba(0, 0, 0, .3);
+        width: 100%;
+    }
+
+    .cancelOrderBtn {
+        padding-bottom: 50px;  
+        padding-top: 40px;  
+    }
 }
